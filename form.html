@@ -1,0 +1,42 @@
+
+<ion-view view-title="İletişim Formu">
+  <ion-content>
+
+     <div class="img-centered"><img src=""></div></div>
+    
+  <form>
+  <div class="list">
+    <ion-md-input placeholder="Ad"  type="text" ng-model="bilgi.ad"></ion-md-input>
+    <ion-md-input placeholder="Soyad"  type="text" ng-model="bilgi.soyad"></ion-md-input>
+	 
+	<ion-md-input placeholder="E-posta" type="email" ng-model="bilgi.email"></ion-md-input>
+	<ion-md-input placeholder="Telefon" type="tel" ng-model="bilgi.tel"></ion-md-input>
+
+      
+	<ion-md-input placeholder="Doğum Tarihi" type="date" ng-model="bilgi.d_tarih" value=""></ion-md-input>
+
+	<label class="item item-input item-select" >
+    
+    <div class="input-label" >
+      Cinsiyet
+    	</div>
+    	<select ng-model="bilgi.cinsiyet">
+       <option value="" selected>Seç</option>
+     	 <option value="Bay"selected>Bay</option>
+     	 <option value="Bayan">Bayan</option>
+  	  	</select>
+ 	 </label>
+ 	 <ion-md-input placeholder="Yaşadığınız İl"  type="text" ng-model="bilgi.il"></ion-md-input>
+ 	 <ion-md-input placeholder="Yaşadığınız İlçe"  type="text" ng-model="bilgi.ilce"></ion-md-input>
+ 	 <ion-md-input placeholder="Eklemek İstedikleriniz?" type="text" ng-model="bilgi.ek"></ion-md-input>
+ 	 
+      </div>
+      
+       <a class="button button-block button-calm icon-left ion-camera" ng-click="kontrol()" >
+  		    Fotoğraf Ekle
+	     </a>
+
+	  </form>
+
+  </ion-content>
+</ion-view>

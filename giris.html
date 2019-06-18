@@ -1,0 +1,31 @@
+<ion-modal-view>
+
+<ion-header-bar class="bar bar-header bar-calm">
+
+  <h1 class="title">Giriş</h1>
+  <div class="buttons">
+      <button class="button " ng-click="kapat()">Kapat</button>
+    </div>
+
+  </ion-header-bar>
+  <ion-content>
+   <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label ion-ios-email"> E-posta</span>
+    <input type="email" placeholder="Lütfen e-posta adresinizi giriniz." ng-model="login.eposta">
+  </label>
+  <label class="item item-input item-stacked-label">
+  <meta name="format-detection" content="telephone=no">
+    <span class="input-label ion-calendar"> Doğum Tarihi (GGAAYYYY,[örn]09101987)</span>
+    <input type="text" placeholder="Lütfen doğum tarihinizi giriniz." ng-model = "login.d_tarih">
+  </label>
+  
+</div>
+<div class="button-giris">
+<a class="button button-block button-calm" ng-click="login()" >
+      Giriş
+    </a>
+</div>
+ </ion-content>
+ </ion-modal-view>
+

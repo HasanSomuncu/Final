@@ -1,0 +1,136 @@
+<ion-view view-title="Fotoğraf Ekle">
+
+
+  <ion-content>
+ 
+	<ion-list>
+      <div class="list card">
+
+      	
+      	<div class="row">
+
+ 		 
+ 		 <div class="col col-50 " >
+ 		 <div id="wrapper"><img src="img/1.png"></div></div>
+
+ 		 <div ng-if="imgURI[0]" class="col col-50 ">
+ 		 <div id="wrapper" >
+ 		 <img src="{{imgURI[0]}}" >
+ 		 </div>
+ 		 </div>
+  		</div>
+
+
+	
+		<button ng-if="!imgURI[0]" class="button button-full button-calm icon-left ion-camera" ng-click="takePhoto(0)">
+			Fotoğraf Çek
+		</button>
+
+		<button ng-if="imgURI[0]" class="button button-full button-calm icon-left ion-camera" ng-click="takePhoto(0)">
+			Tekrar Çek
+		</button>
+     </div>
+
+     <div class="list card">
+      	
+      	<div class="row">
+ 		 
+ 		 <div class="col col-50 ">
+ 		 <div id="wrapper"><img src="img/2.png"></div></div>
+
+ 		 <div ng-if="imgURI[1]" class="col col-50 ">
+ 		 <div id="wrapper">
+ 		 <img src="{{imgURI[1]}}" >
+ 		 </div>
+ 		 </div>
+  		</div>
+	
+		<button ng-if="!imgURI[1]" class="button button-full button-calm icon-left ion-camera" ng-click="takePhoto(1)">
+			Fotoğraf Çek
+		</button>
+
+		<button ng-if="imgURI[1]" class="button button-full button-calm icon-left ion-camera" ng-click="takePhoto(1)">
+			Tekrar Çek
+		</button>
+     </div>
+
+     <div class="list card">
+      	
+      	<div class="row">
+ 		 
+ 		 <div class="col col-50 ">
+ 		 <div id="wrapper"><img src="img/3.png"></div></div>
+
+ 		 <div ng-if="imgURI[2]" class="col col-50 ">
+ 		 <div id="wrapper">
+ 		 <img src="{{imgURI[2]}}" >
+ 		 </div>
+ 		 </div>
+  		</div>
+	
+		<button ng-if="!imgURI[2]" class="button button-full button-calm icon-left ion-camera" ng-click="takePhoto(2)">
+			Fotoğraf Çek
+		</button>
+
+		<button ng-if="imgURI[2]" class="button button-full button-calm icon-left ion-camera" ng-click="takePhoto(2)">
+			Tekrar Çek
+		</button>
+     </div>
+
+     <div class="list card">
+      	
+      	<div class="row">
+ 		 
+ 		 <div class="col col-50 ">
+ 		 <div id="wrapper"><img src="img/4.png"></div></div>
+
+ 		 <div ng-if="imgURI[3]" class="col col-50 ">
+ 		 <div id="wrapper">
+ 		 <img src="{{imgURI[3]}}" >
+ 		 </div>
+ 		 </div>
+  		</div>
+	
+		<button ng-if="!imgURI[3]" class="button button-full button-calm icon-left ion-camera" ng-click="takePhoto(3)">
+			Fotoğraf Çek
+		</button>
+
+		<button ng-if="imgURI[3]" class="button button-full button-calm icon-left ion-camera" ng-click="takePhoto(3)">
+			Tekrar Çek
+		</button>
+     </div>
+
+     <div class="list card">
+      	
+      	<div class="row">
+ 		 
+ 		 <div class="col col-50 ">
+ 		 <div id="wrapper"><img src="img/5.png"></div></div>
+
+ 		 <div ng-if="imgURI[4]" class="col col-50 ">
+ 		 <div id="wrapper">
+ 		 <img src="{{imgURI[4]}}" >
+ 		 </div>
+ 		 </div>
+  		</div>
+	
+		<button ng-if="!imgURI[4]" class="button button-full button-calm icon-left ion-camera" ng-click="takePhoto(4)">
+			Fotoğraf Çek
+		</button>
+
+		<button ng-if="imgURI[4]" class="button button-full button-calm icon-left ion-camera" ng-click="takePhoto(4)">
+			Tekrar Çek
+		</button>
+     </div>
+
+     
+    </ion-list>
+
+    <a class="button button-full button-calm icon-left ion-email" ng-click="ekle()">
+			Gönder
+		</a>
+
+ 
+
+  </ion-content>
+</ion-view>

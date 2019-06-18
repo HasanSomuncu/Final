@@ -1,0 +1,38 @@
+<ion-view view-title="Profil">
+  <ion-content>
+  <ion-refresher     on-refresh="yenile()"
+                     pulling-icon="ion-arrow-down-b calm"
+                     spinner="bubbles">
+                     
+                     >
+                     
+      </ion-refresher>
+
+  <div class="item item-avatar item-button-right">
+    <img src="img/img.png">
+    <h2 style = "color: #11c1f3">{{kullanici[0].ad}} {{kullanici[0].soyad}} </h2>
+    <p style = "color: #11c1f3">{{kullanici[0].d_tarih}} <br> Durum : {{durum}} <br> Doktorunuz : {{doktor}}</p>
+    <div class="buttons button-cikis">
+      <button class="button button-calm " ng-click="cikis()">Çıkış</button>
+    </div>
+  </div>
+
+
+<div class="list background" ng-repeat="kullanici in kullanici">
+
+    <a class="item item-thumbnail-left" href="#/app/profil/{{$index}}">
+      <img src="{{kullanici.foto1}}">
+      <h2 style = "color: #11c1f3">{{kullanici.tarih}} Tarihli Fotoğrafların</h2>
+      <p style = "color: #11c1f3">Tooth</p>
+      
+    </a>
+
+
+</div>
+
+<a class="button button-block button-calm icon-left ion-camera" href="#/app/fotoEkle" >
+          Fotoğraf Gönder
+</a>
+
+</ion-content>
+</ion-view>
